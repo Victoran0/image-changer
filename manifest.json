@@ -1,0 +1,24 @@
+{
+    "name": "Website Image Changer",
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "web_accessible_resources": [
+        {
+            "resources": ["images/*.jpg"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "description": "This extension replace the images on any website to our own",
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
